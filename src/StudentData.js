@@ -1,0 +1,53 @@
+ const  studentData=[{
+     
+      name:"Stephany",
+      Class:'8th',
+      Result:'Passed',
+      Score:"78/100",
+      Grade:'Excellent',
+   
+      },
+      {
+      name:"Deepak",
+      Class:'6th',
+      Result:'Passed',
+      Score:"80/100",
+      Grade:'Average',
+},
+      {
+            name:"Justin",
+            Class:'5th',
+            Result:'Passed',
+            Score:"68/100",
+            Grade:'Excellent',
+      },    
+      {
+            name:"Omega",
+            Class:'8th',
+            Result:'Passed',
+            Score:"58/100",
+            Grade:'Excellent',
+      },
+      {
+            name:"Shadow",
+            Class:'6th',
+            Result:'Failed',
+            Score:"24/100",
+            Grade:'Poor',
+      },
+      {
+            name:"Rocky",
+            Class:'8th',
+            Result:'Passed',
+            Score:"78/100",
+            Grade:'Excellent',
+      },
+      {
+            name:"Albert",
+            Class:'9th',
+            Result:'Passed',
+            Score:"98/100",
+            Grade:'Excellent',
+      }
+]
+export default studentData;
