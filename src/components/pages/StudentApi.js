@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 const StudentApi = ({student}) => {
-      
+      // const {name,clasess,result,score,grade,}=student
   return (
 <>
        <Link className='btn btn-outline-info'  to="#">Add Users</Link>
@@ -26,7 +26,7 @@ student.map((value,index)=>(
       <tr className='table-success '    key={index.toString()}>
             <th scope='col'>{index+1}</th>
             <td>{value.name}</td>
-            <td>{value.class}</td>
+            <td>{value.clasess}</td>
             <td className='esult'>{value.result}</td>
             <td>{value.score}</td>
             <td>{value.grade}</td>
