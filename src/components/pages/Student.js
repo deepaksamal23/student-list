@@ -27,10 +27,10 @@ student.map((value,index)=>(
       <tr className='table-success ' >
             <th scope='col'>{index+1}</th>
             <td>{value.name}</td>
-            <td>{value.Class}</td>
-            <td className='result'>{value.Result}</td>
-            <td>{value.Score}</td>
-            <td>{value.Grade}</td>
+            <td>{value.class}</td>
+            <td className='result'>{value.result}</td>
+            <td>{value.score}</td>
+            <td>{value.grade}</td>
           <td>
             
                 <Link className='btn btn-outline-danger mx-1 ' to={'#'}>Edit</Link>
