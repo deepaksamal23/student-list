@@ -2,7 +2,7 @@
   "name": "redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://deepaksamal23.github.io/student-data.github.io",
+  "homepage": "https://deepaksamal23.github.io/student-list",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
