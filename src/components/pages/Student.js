@@ -1,49 +1,19 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import studentData from '../../StudentData'
-import { Link } from "react-router-dom";
+
+import StudentApi from './StudentApi';
 const Student = () => {
-  const [student,setStudent]=useState(studentData)
-  
+  let info =studentData
+
+const [student,setStudent]=useState(info)
+
+useEffect(()=>{
+setStudent(info)
+},[info])
+
   return (
   <>
-        <Link className='btn btn-outline-info'  to="/user/add">Add Users</Link>
-  <div className='container my-3 '>
-   <table className="table shadow">
-  <thead >
-    <tr className='bg-dark text-light  '>
-      <th scope="col">No.</th>
-      <th scope="col"> Student Name</th>
-      <th scope="col">Class</th>
-      <th scope="col">Result</th>
-      <th scope="col">Score</th>
-      <th scope="col">Grade</th>
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-   
-   {
-student.map((value,index)=>(
-      <tr className='table-success ' >
-            <th scope='col'>{index+1}</th>
-            <td>{value.name}</td>
-            <td>{value.class}</td>
-            <td className='result'>{value.result}</td>
-            <td>{value.score}</td>
-            <td>{value.grade}</td>
-          <td>
-            
-                <Link className='btn btn-outline-danger mx-1 ' to={'#'}>Edit</Link>
-                <Link className='btn btn-info' to=''>Delete</Link>
-          </td>
-      </tr>
-))
-   }
-    
-  </tbody>
-</table>
-     
-    </div>
+       <StudentApi student={student}/>
   </>
   )
 }

@@ -1,4 +1,5 @@
- const  studentData=[{
+ const  studentData=[ 
+      {
      
       name:"Stephany",
       class:'8th',
